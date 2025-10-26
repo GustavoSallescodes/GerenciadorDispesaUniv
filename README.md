@@ -1,6 +1,6 @@
 # Projeto Final - Gestor de Despesas de República
 **Programação e Desenvolvimento de Software 2 - 2/2025**
-**Alunos:** [Nome do Aluno 1], [Nome do Aluno 2], ...
+**Alunos:** Gustavo Salles, Ana Clara Nunes, Felipe Lemos
 ---
 ## 1. Apresentação do Problema
 [cite_start][cite: 60]
@@ -19,9 +19,6 @@
 Para compilar o projeto, execute:
 ```bash
 make
-
-
-
 
 # GerenciadorDispesaUniv
 Projeto Final da disciplina de Progamação e Desenvolvimento de Software II
