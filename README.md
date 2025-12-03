@@ -1,6 +1,6 @@
 # Projeto Final - Gestor de Despesas de República
 **Programação e Desenvolvimento de Software 2 - 2/2025**
-**Alunos:** Gustavo Salles, Ana Clara Nunes, Felipe Lemos
+**Alunos:** Gustavo Salles, Ana Clara Nunes, Filipe Lemos
 ---
 ## 1. Apresentação do Problema
 [cite_start][cite: 60]
