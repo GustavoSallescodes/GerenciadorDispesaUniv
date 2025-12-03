@@ -39,10 +39,5 @@ Projeto Final da disciplina de Progamação e Desenvolvimento de Software II
 |   |-- republica.cpp
 |   |-- main.cpp              <-- Ponto de entrada
 |
-+-- /test/                    <-- Arquivos .cpp (Testes)
-|   |-- test_morador.cpp
-|   |-- test_despesas.cpp
-|   |-- test_republica.cpp
-|
 +-- Makefile                  <-- Arquivo de compilação [cite: 72]
 +-- README.md                 <-- 
