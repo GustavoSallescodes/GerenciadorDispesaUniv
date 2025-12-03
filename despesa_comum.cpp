@@ -7,20 +7,21 @@ DespesaComum::DespesaComum(float valor,
                            Morador* pagador,
                            std::vector<Morador*> envolvidos)
     : Despesa(valor, data, categoria, pagador),
-      moradores_envolvidos_(envolvidos) {}
-
+      envolvidos_(envolvidos) {}
 
 void DespesaComum::dividir() {
-    if (moradores_envolvidos_.empty()) return;
+    if (envolvidos_.empty()) {
+        return; // Sem envolvidos, nada a dividir
+    }
 
-    // 1. Calcula cota individual
-    float cota = valor_ / moradores_envolvidos_.size();
+    // Cada morador paga uma parte igual
+    float cota = valor_ / envolvidos_.size();
 
-    // 2. Pagador recebe crédito (ele pagou a despesa inteira)
+    // Pagador recebe crédito pelo valor total pago
     pagador_->atualizarSaldo(valor_);
 
-    // 3. Todos os envolvidos (inclusive o pagador) pagam sua parte
-    for (Morador* m : moradores_envolvidos_) {
+    // Todos os envolvidos pagam sua parte
+    for (Morador* m : envolvidos_) {
         m->atualizarSaldo(-cota);
     }
 }
